@@ -8,14 +8,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
 </head>
 
 <body>
-    <div id = "scores"></div>
+    <form>
+        <div class="form-group">
+          <label for="score">Please enter initials to record your score</label>
+          <input type="score" class="form-control" id="score" aria-describedby="emailHelp">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     <a href="index.html">
         <div id="restart">Restart Quiz</div>
+        
     </a>
-    <script type = "text/javascript" src = "script.js"></script>
+    <div class="card">
+        <h2>Highscore</h2>
+        <p><strong>Initials:</strong> <span id="lastHighscore"></span></p>
+    </div>
+    <script type = "text/javascript" src = "highscore.js"></script>
 </body>
 
 </html>
